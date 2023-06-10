@@ -100,11 +100,11 @@ openstack coe cluster template create k8s-single-controller-37 \
 --keypair mykey \
 --external-network external \
 --dns-nameserver 8.8.8.8 \
---flavor m1.medium \
---master-flavor m1.medium \
+--flavor m1.large \
+--master-flavor m1.large \
 --volume-driver cinder \
 --docker-volume-size 40 \
---network-driver calico \
+--network-driver flannel \
 --docker-storage-driver overlay2 \
 --coe kubernetes 
 
