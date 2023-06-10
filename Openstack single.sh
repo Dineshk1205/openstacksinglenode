@@ -44,6 +44,7 @@ echo "neutron_external_interface: "$External_NIC_Name"" >> globals.yml
 echo "enable_cinder: "yes"" >> globals.yml >> globals.yml
 echo "enable_cinder_backend_lvm: "yes""  >> globals.yml
 echo "cinder_volume_group: "cinder-volumes"" >> globals.yml
+echo "enable_cinder_backup: "no"" >> globals.yml
 echo "nova_compute_virt_type: "qemu"" >> globals.yml
 echo "enable_magnum: "yes"" >> globals.yml
 echo "enable_cluster_user_trust: true" >> globals.yml
