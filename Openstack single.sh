@@ -70,7 +70,7 @@ cd /etc/kolla
 openstack network create --external --provider-physical-network physnet1 \
         --provider-network-type flat external
 
-openstack subnet create --no-dhcp --ip-version ${IP_VERSION} \
+openstack subnet create --dhcp --ip-version ${IP_VERSION} \
         --allocation-pool $EXT_NET_RANGE --network external \
         --subnet-range $EXT_NET_CIDR --gateway $EXT_NET_GATEWAY external-subnet
         
